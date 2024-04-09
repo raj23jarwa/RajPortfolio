@@ -9,36 +9,3 @@
     font-family: 'Raleway', sans-serif;
   }
 }
-/* Hide scrollbar for other browsers */
-html {
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-.scrollable-container {
-  width: 100%;
-  height: 200px; /* Adjust height as needed */
-  overflow-x: auto;
-  overflow-y: hidden;
-}
-
-.scrollable-container::-webkit-scrollbar {
-  width: 12px;
-}
-
-.scrollable-container::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.scrollable-container::-webkit-scrollbar-thumb {
-  background-color: #4F6BF7;
-  border-radius: 6px;
-}
-
-.scrollbar-track {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 999;
-}
