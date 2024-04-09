@@ -16,7 +16,7 @@ const Home = () => {
         justify-center px-4 md:flex-row' >
 
             <div className='flex flex-col justify-center md:w-full '>
-               <h2 className='text-4xl sm:text-7xl font-bold text-white'>I am a <span className='text-cyan-500 font-bold'>{typeEffect}</span></h2>
+               <h2 className='text-4xl sm:text-7xl font-bold text-white pt-36 md:pt-1'>I am a <span className='text-cyan-500 font-bold'>{typeEffect}</span></h2>
                <p className='text-gray-500 py-4 max-w-md font-semibold text-2xl leading-relaxed'>I have 2+ years of experience in building and designing softwares.
                 currently, i love to work on web technologies like React,Tailwind, Nextjs and other javascript frameworks and libraries.
                </p>
