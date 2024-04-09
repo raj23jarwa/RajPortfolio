@@ -11,7 +11,7 @@ const Home = () => {
     deleteSpeed:200,
   })
   return (
-    <div name="home" className=' h-screen w-full bg-gradient-to-b from-black via-black to-gray-800 text-white pt-28 md:pt-8'>
+    <div name="home" className=' h-screen w-full bg-gradient-to-b from-black via-black to-gray-800 text-white pt-24 md:pt-8'>
         <div className='max-w-screen-lg mx-auto h-full flex flex-col items-center 
         justify-center px-4 md:flex-row' >
 
