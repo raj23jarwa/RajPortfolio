@@ -11,7 +11,7 @@ const Home = () => {
     deleteSpeed:200,
   })
   return (
-    <div name="home" className=' h-screen w-full  text-white pt-8 md:pt-8'>
+    <div name="home" className=' h-screen w-full  text-white pt-28 md:pt-8'>
         <div className='max-w-screen-lg mx-auto h-full flex flex-col items-center 
         justify-center px-4 md:flex-row' >
 
@@ -29,7 +29,7 @@ const Home = () => {
                </div>
             </div>
             <div>
-            <img src={HeroImage} alt="myprofile" className='rounded-2xl mx-auto w-48 md:w-80 md:h-auto object-cover' />
+            <img src={HeroImage} alt="myprofile" className='rounded-2xl mx-auto w-52 h-96 md:w-80 md:h-auto object-cover' />
         </div>
         </div>
        
