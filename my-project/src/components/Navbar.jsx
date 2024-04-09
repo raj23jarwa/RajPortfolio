@@ -12,7 +12,7 @@ const Navbar = () => {
     ];
 
     return (
-        <div className='flex justify-between items-center w-full h-20 text-white bg-black fixed px-4'>
+        <div className='flex justify-between items-center w-full h-20 text-white bg-black sticky px-4 top-0'>
             <div>
                 <h1 className='font-signature text-4xl'>Rajkumar</h1>
             </div>
