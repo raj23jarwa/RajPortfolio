@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <div name="home" className=' h-screen w-full  text-white pt-28 md:pt-8'>
         <div className='max-w-screen-lg mx-auto h-full flex flex-col items-center 
-        justify-center px-4 md:flex-row' >
+        justify-center px-4 md:flex-row ' >
 
             <div className='flex flex-col justify-center md:w-full '>
                <h2 className='text-4xl sm:text-7xl font-bold text-white  md:pt-1'>I am a <span className='text-cyan-500 font-bold'>{typeEffect}</span></h2>

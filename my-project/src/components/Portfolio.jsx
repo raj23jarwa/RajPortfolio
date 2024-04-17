@@ -1,6 +1,6 @@
 import React from 'react';
 import todo from '../assets/todo.png';
-
+import DiceGame from '../assets/DiceGame.png'
 const Portfolio = () => {
     const portfolios = [
         {
@@ -11,9 +11,9 @@ const Portfolio = () => {
         },
         {
             id: 2,
-            src: todo,
-            demoLink: 'https://example.com/demo2',
-            codeLink: 'https://example.com/code2'
+            src: DiceGame,
+            demoLink: 'https://dice-game-using-react-tailwind.vercel.app/',
+            codeLink: 'https://github.com/raj23jarwa/Dice-Game-Using-React--Tailwind'
         },
         {
             id: 3,
@@ -45,7 +45,7 @@ const Portfolio = () => {
     ];
 
     return (
-        <div name='portfolio' className='bg-gradient-to-b from-black to-gray-800 w-full text-white pt-14'>
+        <div name='portfolio' className='w-full text-white pt-14 '>
             <div className='max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full'>
                 <div className='pt-28 md:pb-8'>
                     <p className='text-4xl font-bold inline border-b-4 border-gray-500'>Portfolio</p>
@@ -58,7 +58,7 @@ const Portfolio = () => {
                             <img
                                 src={src}
                                 alt=""
-                                className='rounded-md duration-200 hover:scale-105'
+                                className='rounded-md duration-200 hover:scale-105 w-[95%] h-56'
                             />
                             <div className='flex justify-center items-center'>
                                 <a href={demoLink} target="_blank" rel="noopener noreferrer" className='w-1/2 px-6 py-3 m-3 duration-200 hover:scale-105   '>Demo</a>

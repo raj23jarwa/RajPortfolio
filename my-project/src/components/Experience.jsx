@@ -6,7 +6,7 @@ import react from '../assets/react.png';
 import mongodb from '../assets/mongodb.png';
 import tailwind from '../assets/tailwind-css.png';
 import nodejs from '../assets/nodejs.png';
-import graphql from '../assets/graphql.png';
+// import graphql from '../assets/graphql.png';
 import github from '../assets/github.png';
 import jira from '../assets/jira.png';
 
