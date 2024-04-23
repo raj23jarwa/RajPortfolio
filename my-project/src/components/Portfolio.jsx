@@ -1,6 +1,7 @@
 import React from 'react';
 import todo from '../assets/todo.png';
 import DiceGame from '../assets/DiceGame.png'
+import watchlist from '../assets/watchlist.png'
 const Portfolio = () => {
     const portfolios = [
         {
@@ -17,9 +18,9 @@ const Portfolio = () => {
         },
         {
             id: 3,
-            src: todo,
-            demoLink: 'https://example.com/demo2',
-            codeLink: 'https://example.com/code2'
+            src: watchlist,
+            demoLink: 'https://movie-watchlistt.vercel.app/',
+            codeLink: 'https://github.com/raj23jarwa/Authenticate_Assignment'
         },
         {
             id: 4,

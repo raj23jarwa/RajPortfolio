@@ -26,14 +26,12 @@ const Navbar = () => {
                 <h1 className='font-signature text-4xl'>Rajkumar</h1>
             </div>
 
-            <ul className='hidden md:flex'>
+            <ul className='hidden md:flex gap-6'>
                 {links.map(({ id, link }) => ( // Include index parameter in map function
                     <li
                         key={id}
                         onClick={() => handleActive()} // Pass index to handleActive correctly
-                        className={`px-4 md:text-xl cursor-pointer font-medium text-gray-500 capitalize hover:scale-105 duration-200 hover:border-b-2 border-white rounded-xl ${
-                            active ? 'bg-white' : 'bg-none'
-                        }`}
+                        className={`px-4 md:text-xl cursor-pointer font-medium text-gray-500 capitalize hover:scale-105 duration-200 hover:border-b-2 border-white rounded-xl`}
                     >
                         <Link to={link} smooth duration={500}>{link}</Link>
                     </li>
