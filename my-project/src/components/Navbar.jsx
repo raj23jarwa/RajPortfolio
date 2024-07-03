@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
 import { CgDarkMode } from "react-icons/cg";
@@ -6,20 +6,22 @@ import { CgDarkMode } from "react-icons/cg";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [active, setActive] = useState(null);
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true); // Set initial state to true
+
+  useEffect(() => {
+    if (darkMode) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  }, [darkMode]);
 
   const handleActive = (index) => {
-    setActive(index); // Set active state to the clicked index
+    setActive(index);
   };
-  
 
   const handleDarkMode = () => {
     setDarkMode(!darkMode);
-    if (darkMode) {
-      document.documentElement.classList.remove('dark');
-    } else {
-      document.documentElement.classList.add('dark');
-    }
   };
 
   const links = [
@@ -33,7 +35,7 @@ const Navbar = () => {
   return (
     <div className={`flex justify-between items-center w-full h-20 px-4 sticky top-0 bg-gray-100 text-gray-800 dark:bg-slate-900 dark:text-white transition-colors duration-300`}>
       <div>
-        <h1 className="font-signature text-4xl font-bold ">Rajkumar</h1>
+        <h1 className="font-signature text-4xl font-bold">Rajkumar</h1>
       </div>
 
       <ul className="hidden md:flex gap-6">
@@ -63,7 +65,7 @@ const Navbar = () => {
       </div>
 
       {nav && (
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen dark:bg-gradient-to-b from-black dark:to-gray-800 dark:text-white bg-gradient-to-b from bg-cyan-600 to-cyan-300 text-white">
+        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-cyan-600 to-cyan-300 text-white dark:from-black dark:to-gray-800 dark:text-white">
           {links.map(({ id, link }) => (
             <li
               key={id}
