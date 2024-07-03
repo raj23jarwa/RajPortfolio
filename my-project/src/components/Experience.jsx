@@ -5,11 +5,13 @@ import js from '../assets/javascript.png';
 import react from '../assets/react.png';
 import mongodb from '../assets/mongodb.png';
 import tailwind from '../assets/tailwind-css.png';
+import redux from '../assets/redux.png'
 import nodejs from '../assets/nodejs.png';
 // import graphql from '../assets/graphql.png';
 import github from '../assets/github.png';
 import jira from '../assets/jira.png';
-
+import aws from '../assets/aws.svg';
+import next from '../assets/next.png' 
 const Experience = () => {
     const techs = [
         {
@@ -44,33 +46,52 @@ const Experience = () => {
         },
         {
             id: 6,
-            src: nodejs,
-            title: 'NODE JS',
-            style: 'shadow-emerald-500'
+            src: redux,
+            title: 'REDUX',
+            style: 'shadow-violet-700'
         },
+
         {
             id: 7,
+            src: nodejs,
+            title: 'NODE JS',
+            style: 'shadow-lime-600'
+        },
+        {
+            id: 8,
             src: mongodb,
             title: 'MONGODB',
             style: 'shadow-green-500'
         },
         {
-            id: 8,
+            id: 9,
             src: github,
             title: 'GITHUB',
             style: 'shadow-gray-400'
         },
 
         {
-            id: 9,
+            id: 10,
             src: jira,
             title: 'JIRA',
             style: 'shadow-blue-500'
         },
+        {
+            id:11,
+            src:aws,
+            title:'AWS',
+            style:'shadow-yellow-500'
+        },
+        {
+            id:12,
+            src:next,
+            title:'NEXT',
+            style:'shadow-gray-400'
+        }
     ];
 
     return (
-        <div name='experience' className='w-full text-white py-16 pt-28'>
+        <div name='experience' className='w-full dark:text-white dark:bg-slate-900 bg-gray-100 font-semibold text-gray-600 py-16 pt-28'>
             <div className='max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full'>
                 <div className='pb-8'>
                     <p className='text-4xl font-bold inline border-b-4 border-gray-500'>Experience</p>
